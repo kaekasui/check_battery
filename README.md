@@ -4,7 +4,8 @@
 30%以下で電源が刺さっていない場合、80%以上で電源が刺さっている場合に通知します。
 
 以下のコマンドで直接実行できます。
-`ruby notice.rb`
+
+`$ ruby notice.rb`
 
 # 定期的に実行
 
@@ -17,6 +18,8 @@ CronまたはLaunchdを設定し、定期的に実行するようにすると便
 ```
 
 ```
+[cron設定ファイル]
+
 */5 * * * * /ruby/directory/.rbenv/version/ruby /path/to/battery/notice.rb 2>> /path/to/battery/error_log.log
 ```
 
@@ -28,6 +31,8 @@ $ vim notice_battery.plist
 ```
 
 ```xml
+[notice_battery.plist]
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

@@ -12,5 +12,5 @@ g = Growl.new 'localhost', 'ruby-growl'
 g.add_notification 'ruby-growl Notification'
 
 if (life.to_i >= 80 && connecting_ac_power) || (life.to_i <= 30 && !connecting_ac_power)
- g.notify 'ruby-growl Notification', 'Notice the Battery', "バッテリー残量：#{$1}%"
+  g.notify 'ruby-growl Notification', 'Notice the Battery', "バッテリー残量：#{$1}%"
 end

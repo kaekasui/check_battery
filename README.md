@@ -56,10 +56,10 @@ $ vim notice_battery.plist
 
 * launchd listに登録する
 ```
-$ launch load ~/Library/LaunchAgents/notice_battery.plist
+$ launchctl load ~/Library/LaunchAgents/notice_battery.plist
 ```
 
 * launchd listから外す
 ```
-$ launch unload ~/Library/LaunchAgents/notice_battery.plist
+$ launchctl unload ~/Library/LaunchAgents/notice_battery.plist
 ```
